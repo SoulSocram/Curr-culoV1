@@ -1,0 +1,113 @@
+body {
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+#header1, footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #292828;
+    display: flex; 
+    height: 3.6rem;
+}
+#menu {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+}
+#menu ul, #social ul, #opcoes ul {
+    color: white;
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+#menu ul li {  
+    height: 2.47rem;
+    margin-right: 1rem;
+}
+#menu ul li a {
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    
+}
+#menu ul li a:hover {
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    color: #00bac6;
+}
+#menu ul li:hover {
+    color: #00bac6;
+    border-bottom: 2px solid #00bac6;
+}
+.ativo {  
+    color: #00bac6;
+}
+#header2 {
+    height: 4rem;
+    border-bottom: 3px solid #8b8b8b;
+    text-align: center;
+}
+#header2 h1{
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+#opcoes {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    vertical-align: middle;
+}
+#opcoes ul {
+    margin: 0 auto;
+    height: 2rem;
+}
+#opcoes button, .class {
+    font-size: 18px;
+    border: none;
+    height: 100%;
+    width: 5rem;
+    color: #8b8b8b;
+    background-color: transparent;
+    
+}
+#opcoes button:hover {
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    color: #00bac6;
+    cursor: pointer;
+}
+#resumo {
+    display: block;
+}
+#resumo li {
+    width: 25rem;
+    margin: 0 auto;
+    text-align: justify;
+}
+#detalhes {
+    display: none;
+}
+#social {
+    margin: 0 auto;
+    width: 20%;
+    display: flex;
+    align-content: center;
+    vertical-align: middle;
+}
+#menu ul, #social ul, #opcoes ul {
+    padding: 0;
+}
+#social ul li {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1rem;
+}
+#social ul li a img {
+    width: 2rem;
+}

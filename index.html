@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
     <title>Teste</title>
 </head>
 
@@ -16,7 +15,7 @@
             <div id="menu">
                 <ul>
                     <li><a href="">Inicio</a></li>
-                    <li class="ativo"><a href="">Currículo</a></li>
+                    <li id="ativo"><a href="">Currículo</a></li>
                     <li><a href="">Sobre</a></li>
                 </ul>
             </div>
@@ -26,16 +25,26 @@
         </div>
         <div id="opcoes">
             <ul>
-                <li><button onclick="alternar2('resumo', 'detalhes')">Resumo</button></li>
-                <li><button onclick="alternar('detalhes', 'resumo')">Detalhes</button></li>
+                <li><button class="btn" id="btn1"
+                        onclick="alternar2('conteudo', 'resumo');alterar(btn1)">Resumo</button></li>
+                <li><button class="btn" id="btn2"
+                        onclick="alternar2('conteudo', 'detalhes');alterar(btn2)">Detalhes</button></li>
+                <li><button class="btn" id="btn3"
+                        onclick="alternar2('conteudo', 'contato');alterar(btn3)">Contato</button></li>
             </ul>
         </div>
     </header>
     <div class="conteudo" id="resumo" name="cont">
-        <p>09/12/2001 - 19 anos <br> R. Rio Grande 113 - B. Nossa Senhora de Fátima <br> Betim / MG - 32672238 <br>
-            Tel.: (31) 989612091 <br> marcossena1728@gmail.com</p>
+        <h4>OBJETIVO PROFISSIONAL</h4>
+        <p>Atualmente busco uma oportunidade na área de programação e/ou segurança da informação,
+            estou cursando sistemas de informação no centro universitário UNA de Betim, no 3º período,
+            tenho conhecimento em redes e infraestrutura, HTML, Java, JS, CSS, modelagem de software e
+            banco de dados.
+        </p>
+    </div>
+    <div class="conteudo" id="detalhes" name="cont">
         </hr>
-        <h4>FORMAÇÃO ACADÊMICA:</h4>
+        <h4>FORMAÇÃO ACADÊMICA</h4>
         <p>Sistemas de Informação: Centro Universitário Una de Betim – 3º semestre <br>
             Data de Início: Jan/2020 (Em andamento)
         </p>
@@ -73,8 +82,9 @@
                 contribuí com os bancos de dados e leitura de arquivos. </li>
         </ul>
     </div>
-    <div class="conteudo" id="detalhes" name="cont">
-        <p>Teste2</p>
+    <div class="conteudo" id="contato">
+        <p>09/12/2001 - 19 anos <br> R. Rio Grande 113 - B. Nossa Senhora de Fátima <br> Betim / MG - 32672238 <br>
+            Tel.: (31) 989612091 <br> marcossena1728@gmail.com</p>
     </div>
     <footer>
         <div id="social">
@@ -85,6 +95,7 @@
             </ul>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>

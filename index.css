@@ -5,13 +5,10 @@ body {
     text-align: center;
 }
 #header1, footer {
-    width: 100%;
-    margin: 0 auto;
     background-color: #292828;
-    display: flex; 
     height: 3.6rem;
 }
-#menu {
+#menu, #header1, footer {
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -26,7 +23,8 @@ body {
 }
 #menu ul li {  
     height: 2.47rem;
-    margin-right: 1rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
 }
 #menu ul li a {
     color: #8b8b8b;
@@ -44,8 +42,8 @@ body {
     color: #00bac6;
     border-bottom: 2px solid #00bac6;
 }
-.ativo {  
-    color: #00bac6;
+#ativo a {  
+    color: #00bac6 !important;
 }
 #header2 {
     height: 4rem;
@@ -85,12 +83,13 @@ body {
 #resumo {
     display: block;
 }
-#resumo li {
+.conteudo ul, #resumo p {
     width: 25rem;
     margin: 0 auto;
     text-align: justify;
+    margin-bottom: 3rem;
 }
-#detalhes {
+#detalhes, #contato {
     display: none;
 }
 #social {
